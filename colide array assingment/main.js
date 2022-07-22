@@ -127,16 +127,11 @@ function move(){
 }
 function collide(){
     for(let i=0; i <rectangles.length; i++) {
-        if (rectCollide(player, rectangles[i]))
+        if (rectCollide(player, rectangles[i])){
             player.y = rectangles[i].y + rectangles[i].h 
+        }
     }
 }
-
-
-
-
-
-
 
 
 //random integer/decima/color functions
@@ -160,5 +155,3 @@ function randomDec(low,high) {
  } 
 
  
-
-
